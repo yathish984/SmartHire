@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+}
+
+.login-left {
+    width: 50%;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-left h1 {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.login-left h2 {
+    font-size: 38px;
+}
+
+.login-left p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.login-right {
+    width: 50%;
+    background: #f5f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 430px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.login-card h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.login-card > p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.login-options label {
+    margin: 0;
+    font-weight: normal;
+}
+
+.login-options a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.register {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.register a {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-left,
+    .login-right {
+        width: 100%;
+    }
+
+    .login-left {
+        padding: 40px;
+    }
+
+    .login-card {
+        width: 90%;
+        margin: 30px 0;
+    }
+}
